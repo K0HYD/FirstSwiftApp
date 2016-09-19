@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet var theLabel: UILabel!
     
     @IBOutlet var text1: UITextField!
@@ -19,17 +19,24 @@ class ViewController: UIViewController {
     var tapCount = 0
     
     @IBAction func buttonPressed(_ sender: AnyObject) {
-
-        theLabel.text = "The answer is:  \(Double(text1.text!)! + Double(text2.text!)!)"
-    
-    }
         
+        let addition = false
+        
+        if addition {
+            
+            theLabel.text = "The answer is:  \(Double(text1.text!)! + Double(text2.text!)!)"
+        } else {
+            theLabel.text = "The answer is:  \(Double(text1.text!)! - Double(text2.text!)!)"
+        }
+        
+    }
+    
 }
 
 // This code is executed when I press the new button added
 
-    
 
-        // Do any additional setup after loading the view, typically from a nib.
-        
+
+// Do any additional setup after loading the view, typically from a nib.
+
         
