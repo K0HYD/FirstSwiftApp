@@ -1,6 +1,9 @@
-//: Playground - noun: a place where people can play
+var favNumbers = [7,3,12,85,55]
+favNumbers.count
+favNumbers[1] = 5
 
-var theLabel = ""
+favNumbers
+favNumbers.insert(99, at: 1)
 
-theLabel = String(Double("5")! + Double("78")!)
+
 
