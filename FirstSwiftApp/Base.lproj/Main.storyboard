@@ -29,29 +29,68 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1br-O9-lR8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QLh-YL-siH">
-                                <state key="normal" title="I Feel Lucky?"/>
-                                <connections>
-                                    <action selector="luckyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SB2-4T-jDt"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9UG-Xp-IiV">
+                                <frame key="frameInset" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jZC-8w-ebU">
+                                        <frame key="frameInset" width="50" height="50"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="u3f-Dy-Glq">
+                                <frame key="frameInset" minX="188" minY="-94" height="77"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="23v-aU-kuM">
+                                <frame key="frameInset" minX="188" minY="8" height="88"/>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8nA-9o-nbz">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8A6-Fx-aYV"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6wL-9I-qSz">
+                                <frame key="frameInset" minX="139" minY="240" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="dUk-4e-kBk"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="QLh-YL-siH" firstAttribute="top" secondItem="cxK-VM-tbs" secondAttribute="bottom" constant="20" id="75n-Q4-scI"/>
+                            <constraint firstItem="8nA-9o-nbz" firstAttribute="top" secondItem="cxK-VM-tbs" secondAttribute="bottom" constant="19.5" id="43w-hR-PjA"/>
                             <constraint firstItem="Bey-uN-TJz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="BOg-lV-81t"/>
                             <constraint firstItem="cxK-VM-tbs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DjJ-6B-Vwo"/>
+                            <constraint firstItem="6wL-9I-qSz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EYQ-nk-cjD"/>
+                            <constraint firstItem="6wL-9I-qSz" firstAttribute="top" secondItem="8nA-9o-nbz" secondAttribute="bottom" constant="40" id="HRg-EI-yhe"/>
+                            <constraint firstItem="6wL-9I-qSz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mdp-5E-ej6"/>
+                            <constraint firstItem="u3f-Dy-Glq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OYK-3V-Kvc"/>
                             <constraint firstItem="Bey-uN-TJz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P97-fC-cBb"/>
-                            <constraint firstItem="QLh-YL-siH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wys-DA-poM"/>
-                            <constraint firstItem="cxK-VM-tbs" firstAttribute="top" secondItem="Bey-uN-TJz" secondAttribute="bottom" constant="20" id="lPU-al-npn"/>
+                            <constraint firstItem="6wL-9I-qSz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sxv-wd-1bV"/>
+                            <constraint firstItem="8nA-9o-nbz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XfN-fp-z47"/>
+                            <constraint firstItem="6wL-9I-qSz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a7l-Up-bsN"/>
+                            <constraint firstItem="8nA-9o-nbz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dNH-YH-vGb"/>
+                            <constraint firstItem="cxK-VM-tbs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dfN-c4-GcE"/>
+                            <constraint firstItem="23v-aU-kuM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="feb-pC-kZ5"/>
+                            <constraint firstItem="8nA-9o-nbz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iDA-UQ-nop"/>
+                            <constraint firstItem="cxK-VM-tbs" firstAttribute="top" secondItem="Bey-uN-TJz" secondAttribute="bottom" constant="30" id="lPU-al-npn"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="8nA-9o-nbz" id="KgM-5M-E4X"/>
+                        <outlet property="text2" destination="6wL-9I-qSz" id="uID-Ja-5wc"/>
                         <outlet property="theLabel" destination="Bey-uN-TJz" id="oHk-RL-Duy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-33" y="20"/>
         </scene>
     </scenes>
 </document>

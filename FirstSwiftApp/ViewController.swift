@@ -12,39 +12,23 @@ class ViewController: UIViewController {
 
     @IBOutlet var theLabel: UILabel!
     
+    @IBOutlet var text1: UITextField!
+    
+    @IBOutlet var text2: UITextField!
+    
     var tapCount = 0
     
     @IBAction func buttonPressed(_ sender: AnyObject) {
-       theLabel.text = "K0HYD says Hi Again!"
-        print("First Button was Tapped")
-        tapCount = tapCount + 1
-        
-        if tapCount >= 4 {
-            theLabel.text = "You tapped the button too many times!!!"
-
+        print(text1.text!)
+        print(text2.text!)
         }
         
     }
 
 // This code is executed when I press the new button added
+
     
-    @IBAction func luckyPressed(_ sender: AnyObject) {
-        theLabel.text = "Buttons are COOL!"
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view, typically from a nib.
         
         
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
-}
-
