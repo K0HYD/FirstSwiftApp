@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         print("First Button was Tapped")
         tapCount = tapCount + 1
         
-        if tapCount >= 5 {
+        if tapCount >= 4 {
             theLabel.text = "You tapped the button too many times!!!"
 
         }
