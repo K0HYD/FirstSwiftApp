@@ -19,11 +19,12 @@ class ViewController: UIViewController {
     var tapCount = 0
     
     @IBAction func buttonPressed(_ sender: AnyObject) {
-        print(text1.text!)
-        print(text2.text!)
-        }
-        
+
+        theLabel.text = "The answer is:  \(Double(text1.text!)! + Double(text2.text!)!)"
+    
     }
+        
+}
 
 // This code is executed when I press the new button added
 

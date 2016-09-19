@@ -1,9 +1,6 @@
 //: Playground - noun: a place where people can play
 
-import UIKit
+var theLabel = ""
 
-var age = 27
-var weight = 240.56
+theLabel = String(Double("5")! + Double("78")!)
 
-Double(age) * weight
-age * Int(weight)
